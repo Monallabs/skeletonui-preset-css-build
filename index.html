@@ -1,0 +1,31 @@
+<html lang="en" data-theme="mint" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte + TS</title>
+    <script src="./dist/bundle.iife.js"></script>
+    <script lang="ts">
+            import { mount } from 'svelte'
+    </script>
+    <link href="./dist/bundle.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script lang="ts">
+
+      console.log("setting up justpy_core");
+      const app = jpComponentBuilder.mount(jpComponentBuilder.App , {
+        target: document.getElementById('app'),
+      })
+        </script>
+        
+	<button type="button" class="btn preset-tonal-primary">Tonal</button>
+	<button type="button" class="btn preset-filled-surface-100-900 shadow-xl">Elevated</button>
+	<button type="button" class="btn preset-outlined-primary-500">Outlined</button>
+	<button type="button" class="btn preset-outlined-primary-500">Outlined</button>
+<div class="bg-primary-500">Primary Color </div> 
+<div class="bg-primary-500/25">Primary Color @ 25% transparency</div> 
+<div class="bg-surface-50-950/60">Surface Pairing 50/950 @ 60% transparency</div>
+  </body>
+</html>
